@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background: #1d1d1d;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 3s ease-in-out;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: margin 0.5s ease-out;
+}
+
+.title {
+  color:#16D9E3;
+  font-size: 24px;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.color-list li {
+  margin: 10px;
+}
+
+.color-btn {
+  background-color: transparent;
+  border: 2px solid #C0C0C0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+}
+.two{
+  color: #16D9E3;
+}
+.two:hover {
+  border: 2px solid #16D9E3;
+  
+}
+.one {
+  color: #CC3399;
+}
+.one:hover {
+  border: 2px solid #CC3399;
+  
+}
+
+.three:hover {
+  border: 2px solid #e64c1d;
+  /* color: linear-gradient(90deg,rgb(250, 113, 34)C 0%, #c0117d 100%);  */
+}
+
+span {
+  margin: 0;
+}
+.three span {color:#FFFF00;}
+.three span+span {color:#FF0033;}
+.three span+span+span {color:#FF00FF;}
+.three span+span+span+span {color:#660099;}
+.three span+span+span+span+span {color:#0033CC;}
+.three span+span+span+span+span+span {color:#0099CC;}
+.three span+span+span+span+span+span+span {color:#33CCCC;}
+.three span+span+span+span+span+span+span+span {color:#00CC66;}
+.three span+span+span+span+span+span+span+span+span {color:#339900;}
+.three span+span+span+span+span+span+span+span+span+span {color:#666633;}
