@@ -16,7 +16,7 @@ for(let i = 0; i < SQUARES_NUMBERS; i++){
 }
 
 colorList.addEventListener('click', (event) => {
-	if (event.target.classList.contains('color-btn')) {
+	if (event.target.classList.contains('color-btn') || event.target.classList.contains('span')) {
 		colorIdx = parseInt(event.target.getAttribute('data-time'));
 		// console.log(`colorIdx`, colorIdx)
 	}
